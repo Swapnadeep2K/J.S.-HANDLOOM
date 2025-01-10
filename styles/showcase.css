@@ -1,87 +1,114 @@
-/* General Styling */
-#featured-showcase {
+/* Section Styling */
+.showcase {
   padding: 40px;
 }
 
-#featured-showcase h2 {
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #3a001e;
+.showcase-title {
+  color: #7a2c18;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-/* Wrapper for Featured Image and Showcase Gallery */
 .showcase-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   gap: 20px;
-  justify-content: center;
-  align-items: flex-start;
 }
 
-/* Main Featured Image */
-.featured-image {
-  flex: 1 1 40%;
+/* Main Highlight */
+.featured-image-gallery {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.featured-images {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
   position: relative;
 }
 
-.featured-image img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.main-saree-image-div {
+  flex: 1;
+  position: relative;
 }
 
-.featured-image .shop-now {
-  position: absolute;
-  bottom: 10px;
-  right: 15px;
-  background-color: #8b0000;
-  color: white;
-  padding: 10px 15px;
+.main-saree-image {
+  max-width: 300px;
+  height: auto;
+  /* border: 2px solid #3663D8; */
+  border-radius: 0.5rem;
+}
+
+.side-saree-image-div {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.side-saree-image {
+  max-width: 150px;
+  height: auto;
+  /* border: 2px solid #3663D8; */
+  border-radius: 0.5rem;
+}
+
+/* .featured-image {
+  flex: 1;
+  position: relative;
+}
+
+.main-saree-image {
+  width: 100%;
   border-radius: 5px;
+  margin-bottom: 10px;
+} */
+
+.caption {
+  font-size: 16px;
+  color: #7a2c18;
+  margin-bottom: 15px;
+}
+
+.explore-now {
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  display: inline-flex;
+  background-color: #7a2c18;
+  color: #fff;
   text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
-.featured-image .shop-now:hover {
-  background-color: #b22222;
+.explore-now:hover {
+  background-color: #fff;
+  color: #7a2c18;
+  border: 1px solid #7a2c18;
 }
 
-/* Showcase Gallery */
+/* Gallery Section */
 .showcase-gallery {
-  flex: 1 1 55%;
+  flex: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .showcase-item {
-  text-align: left;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.showcase-item:hover {
-  transform: scale(1.05);
-}
-
-.showcase-item img {
-  width: 100%;
   border-radius: 5px;
-  margin-bottom: 10px;
+  overflow: hidden;
+  text-align: center;
 }
 
-.showcase-item h3 {
-  font-size: 16px;
-  color: #333;
-  margin: 5px 0;
-}
-
-.showcase-item p {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 0;
+.showcase-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
