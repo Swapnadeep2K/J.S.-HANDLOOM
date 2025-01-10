@@ -3,7 +3,7 @@
     /* Replace with your image URL */
     background-size: cover;
     background-position: center;
-    height: 500px;
+    max-height: 500px;
     /* Adjust height as needed */
     display: flex;
     justify-content: center;
@@ -25,3 +25,9 @@
     background-color: #fff;
     border-color: #3a001e;
 }
+
+@media only screen and (max-width: 768px) {
+    .hero {
+      text-align: center;
+    }
+  }
