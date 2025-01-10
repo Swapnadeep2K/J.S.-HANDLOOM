@@ -1,0 +1,22 @@
+/* Stats Section */
+.stats-section {
+  background-color: #3663d8;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stat-item h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.stat-item p {
+  margin: 5px 0 0;
+}

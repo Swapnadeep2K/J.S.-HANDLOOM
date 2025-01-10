@@ -1,0 +1,17 @@
+.product-listing {
+    background-color: #ede9d0;
+    padding: 40px;
+}
+
+.product-listing h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-listing-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 5rem;
+    gap: 3rem;
+}

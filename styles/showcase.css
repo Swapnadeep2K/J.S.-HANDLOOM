@@ -1,0 +1,87 @@
+/* General Styling */
+#featured-showcase {
+  padding: 40px;
+}
+
+#featured-showcase h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #3a001e;
+}
+
+/* Wrapper for Featured Image and Showcase Gallery */
+.showcase-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Main Featured Image */
+.featured-image {
+  flex: 1 1 40%;
+  position: relative;
+}
+
+.featured-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.featured-image .shop-now {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  background-color: #8b0000;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.featured-image .shop-now:hover {
+  background-color: #b22222;
+}
+
+/* Showcase Gallery */
+.showcase-gallery {
+  flex: 1 1 55%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.showcase-item {
+  text-align: left;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.showcase-item:hover {
+  transform: scale(1.05);
+}
+
+.showcase-item img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.showcase-item h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.showcase-item p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0;
+}
