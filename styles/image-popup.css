@@ -1,16 +1,16 @@
 /* Popup overlay */
 .image-popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    right: 0;
-    bottom: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
-    background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: #fff;
 }
 
 .image-popup-overlay.active {
@@ -19,23 +19,23 @@
 
 /* Popup content */
 .image-popup-content {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #carouselExampleIndicators {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 #carouselExampleIndicators .carousel-inner {
-    width: auto;
+  width: auto;
 }
 
 .image-popup-content img {
-    max-width:  24rem;
+  max-width: 24rem;
   width: auto !important;
   height: auto;
   object-fit: contain;
@@ -64,8 +64,18 @@
 }
 
 .no-scroll {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .image-popup-overlay {
+    padding: 0.5rem;
   }
+  
+  .image-popup-content img {
+    max-width: 90vw;
+  }
+}
