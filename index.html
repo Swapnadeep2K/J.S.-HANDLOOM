@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS Handloom - Premium Sarees</title>
+    <title>J.S.HANDLOOM - Premium Sarees</title>
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/carousel.css" />
     <link rel="stylesheet" href="styles/product-listing.css" />
     <link rel="stylesheet" href="styles/showcase.css" />
+    <link rel="stylesheet" href="styles/image-popup.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,7 +38,7 @@
         <div class="logo-container">
           <img
             src="images/logo-orange.png"
-            alt="JS Handloom Logo"
+            alt="J.S.HANDLOOM Logo"
             class="logo"
           />
         </div>
@@ -97,7 +98,7 @@
             </svg>
           </a>
           <a
-            href="https://www.facebook.com/profile.php?id=100095718720114&mibextid=JRoKGi"
+            href="https://www.facebook.com/people/JSHandloom/100095718720114/"
             class="icon"
             target="_blank"
           >
@@ -211,7 +212,7 @@
         <div class="logo-container">
           <img
             src="images/logo-orange.png"
-            alt="JS Handloom Logo"
+            alt="J.S.HANDLOOM  Logo"
             class="logo"
           />
         </div>
@@ -240,7 +241,7 @@
             <div class="logo-container">
               <img
                 src="images/logo-white.png"
-                alt="JS Handloom Logo"
+                alt="J.S.HANDLOOM Logo"
                 class="logo"
               />
             </div>
@@ -358,7 +359,7 @@
                 </svg>
               </a>
               <a
-                href="https://www.facebook.com/profile.php?id=100095718720114&mibextid=JRoKGi"
+                href="https://www.facebook.com/people/JSHandloom/100095718720114/"
                 class="icon"
                 target="_blank"
               >
@@ -485,12 +486,12 @@
               crafted with love and precision.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button
+              <a href="/coming-soon.html"
                 type="button"
                 class="hero-button btn btn-primary btn-lg px-4 me-md-2"
               >
                 Shop Now
-              </button>
+              </a>
               <!-- <button
                 type="button"
                 class="btn btn-outline-secondary btn-lg px-4"
@@ -522,25 +523,35 @@
           <div class="featured-images">
             <div class="main-saree-image-div">
               <img
-                src="https://media.nalli.com/media/catalog/product/a/h/ah4878211_m.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=648&width=426&canvas=426:648"
-                alt="Featured Saree 1"
+                src="/images/main-saree.jpg"
+                data-showcase-slide="0"
+                alt="Featured Saree 0"
                 class="main-saree-image"
               />
             </div>
             <div class="side-saree-image-div">
               <img
-                src="https://example.com/second-saree.jpg"
+                src="/images/side-saree-1.jpg"
+                data-showcase-slide="1"
+                alt="Featured Saree 1"
+                class="side-saree-image"
+              />
+              <img
+                src="/images/side-saree-2.jpg"
+                data-showcase-slide="2"
                 alt="Featured Saree 2"
                 class="side-saree-image"
               />
               <img
-                src="https://example.com/third-saree.jpg"
+                src="/images/side-saree-3.jpg"
+                data-showcase-slide="3"
                 alt="Featured Saree 3"
                 class="side-saree-image"
               />
               <img
-                src="https://example.com/third-saree.jpg"
-                alt="Featured Saree 3"
+                src="/images/side-saree-4.jpg"
+                data-showcase-slide="4"
+                alt="Featured Saree 4"
                 class="side-saree-image"
               />
             </div>
@@ -548,22 +559,25 @@
 
           <!-- Caption Section -->
           <p class="caption">
-            *New launching*<br />
-            *bhujodi looks bengal handloom most high quality saree* completely
-            handwoven- with beautiful Bhujodi like detailing<br />
-            <a href="https://wa.me//917003511630">https://wa.me//917003511630</a
-            ><br />
-            Enquiry 👆👆👆<br />
-            Very soft and little thick quality<br />
-            Beautiful weaving on body.<br />
-            With running matching blouse pce<br />
-            Booking no 7003511630<br />
+            Discover the elegance of handcrafted silk sarees with J.S.HANDLOOM. Featuring hand-painted Murshidabad Silk and intricately designed Pure Muslin Silk with Resham work, each piece is Silk Mark Certified, ensuring authenticity and luxury for every occasion.
+            <br>
+            <br>
+            <strong>Key Points:</strong>
+            <br>
+            &#8226; Murshidabad Silk - Hand-painted design with blouse piece included.
+            <br>
+            &#8226; Muslin Silk - All-over sequence Resham work with Noyel blouse piece.
+            <br>
+            &#8226; Govt Silk Mark Certified for premium quality assurance.
+            <br>
+            <br>
+            Visit our Facebook page to explore the collection!
           </p>
 
           <!-- Explore More Link -->
           <div>
             <a
-              href="https://www.facebook.com/groups/YOUR_GROUP_ID/"
+              href="https://www.facebook.com/people/JSHandloom/100095718720114/"
               target="_blank"
               rel="noopener noreferrer"
               class="explore-now"
@@ -676,6 +690,57 @@
       </div>
     </section>
 
+    <section class="image-popup-overlay" id="image-popup-overlay">
+      <div class="image-popup-content">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel carousel-dark slide"
+        >
+          <div class="carousel-indicators"></div>
+          <div class="carousel-inner"></div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <button role="button" aria-label="Close" class="close-btn" id="closeBtn">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="dropin-button-icon dropin-button-icon--tertiary"
+        >
+          <path
+            vector-effect="non-scaling-stroke"
+            d="M18.3599 5.64001L5.62988 18.37"
+            stroke="currentColor"
+          ></path>
+          <path
+            vector-effect="non-scaling-stroke"
+            d="M18.3599 18.37L5.62988 5.64001"
+            stroke="currentColor"
+          ></path>
+        </svg>
+      </button>
+    </section>
+
     <section id="video" class="video">
       <div class="text-container">
         <h2>Watch A Video</h2>
@@ -722,7 +787,7 @@
               <div class="card-body">
                 <blockquote class="blockquote mb-0">
                   <p>
-                    JS Handloom's sarees are truly exquisite. The craftsmanship
+                    J.S.HANDLOOM's sarees are truly exquisite. The craftsmanship
                     and attention to detail are remarkable.
                   </p>
                   <footer class="blockquote-footer">
@@ -756,8 +821,7 @@
               <div class="card-body">
                 <blockquote class="blockquote mb-0">
                   <p>
-                    Beautiful designs and excellent service. Highly recommend JS
-                    Handloom!
+                    Beautiful designs and excellent service. Highly recommend J.S.HANDLOOM!
                   </p>
                   <footer class="blockquote-footer">
                     Ananya K. from
@@ -867,7 +931,7 @@
           <div class="footer-section">
             <img
               src="images/logo-white.png"
-              alt="JS Handloom Logo"
+              alt="J.S.HANDLOOM Logo"
               class="footer-logo"
             />
             <p>
@@ -938,7 +1002,7 @@
                 </svg>
               </a>
               <a
-                href="https://www.facebook.com/profile.php?id=100095718720114&mibextid=JRoKGi"
+                href="https://www.facebook.com/people/JSHandloom/100095718720114/"
                 class="footer-social-icons"
                 target="_blank"
               >
@@ -994,7 +1058,7 @@
             <option value="UK">🇬🇧 UK</option>
           </select>
         </div>
-        <p>&copy; 2025 JS Handloom. All Rights Reserved.</p>
+        <p>&copy; 2025 J.S.HANDLOOM. All Rights Reserved.</p>
       </div>
     </footer>
 
@@ -1134,6 +1198,7 @@
     </section>
   </body>
   <script src="scripts/header.js"></script>
+  <script src="scripts/image-popup.js"></script>
   <script src="scripts/support-widget.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

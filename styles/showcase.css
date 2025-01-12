@@ -36,10 +36,12 @@
 }
 
 .main-saree-image {
+  cursor: pointer;
   max-width:  24rem;
   height: auto;
   /* border: 2px solid #3663D8; */
   border-radius: 0.6rem;
+  aspect-ratio: 3 / 4;
 }
 
 .side-saree-image-div {
@@ -47,13 +49,17 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  object-fit: cover;
 }
 
 .side-saree-image {
+  cursor: pointer;
   max-width: 12rem;
   height: auto;
   /* border: 2px solid #3663D8; */
   border-radius: 0.6rem;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
 }
 
 .caption {
@@ -72,6 +78,7 @@
   text-decoration: none;
   padding: 12px 20px;
   border-radius: 5px;
+  border: 1px solid #3a001e;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
